@@ -48,13 +48,50 @@ nav ul a{
 main {
     width: 100vw;
 }
+
 main .banner {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #fff;
     height: 549px;
     background-image: url(../img/banner-fllix.png);
     background-attachment: fixed;
+    background-size: cover;
+}
+
+main .banner .text-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    font-family: "Montserrat";
+}
+main .banner .text-banner .title {
+    text-align: left;
+    width: 38%;
+    font-family: 'Francois One';
+    font-size: 30px;
+}
+
+main .banner .text-banner .explorer {
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid #00baf2;
+    outline: none;
+    background: none;
+    padding: 20px;
+    transition: all .6s ease-in-out;
+}
+main .banner .text-banner .explorer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+main .banner .text-banner .explorer:hover {
+    background-color: #00baf2;
 }
