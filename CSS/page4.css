@@ -38,13 +38,13 @@ header {
   font-size: 2.5rem;
   margin-left: 2%;
 }
-.navbar .navbar-toggler{
-  color: rgba(255,255,255,.5);
+.navbar .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
   background-color: #5d5d5d;
 }
 
 .navbar-nav {
-  margin-left: 60% ;
+  margin-left: 60%;
   width: 400px;
   display: flex;
   justify-content: space-around;
@@ -58,33 +58,33 @@ nav ul a {
 }
 
 main {
-    width: 100vw;
-    margin-left: 120px;
+  width: 100vw;
+  margin-left: 120px;
 }
 
 .banner {
-    background-image: url(../img/stalkerpage.jpg);
-    height: 550px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 20px;
+  background-image: url(../img/stalker-banner.jpg);
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.text{
+.text {
   width: 1350px;
   margin-top: 10px;
 }
 
-.text h2{
+.text h2 {
   height: 40px;
 }
 
-.text img{
+.text img {
   height: 50px;
   margin-bottom: 10px;
 }
@@ -100,11 +100,11 @@ main {
   color: #5d5d5d;
 }
 
-.trailer h3{
+.trailer h3 {
   margin: 25px 0 15px;
   color: #5d5d5d;
 }
 
-span{
-  color:#098eb7;
+span {
+  color: #098eb7;
 }

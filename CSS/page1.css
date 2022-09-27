@@ -63,7 +63,7 @@ main {
 }
 
 .banner {
-  background-image: url(../img/opequeno-principe.jpg);
+  background-image: url(../img/o-pequeno-principe-banner.jpg);
   height: 550px;
   width: 100%;
   background-size: cover;
@@ -75,16 +75,16 @@ main {
   margin-bottom: 20px;
 }
 
-.text{
+.text {
   width: 1350px;
   margin-top: 10px;
 }
 
-.text h2{
+.text h2 {
   height: 40px;
 }
 
-.text img{
+.text img {
   height: 50px;
   margin-bottom: 10px;
 }
@@ -100,7 +100,7 @@ main {
   color: #5d5d5d;
 }
 
-.trailer h3{
+.trailer h3 {
   margin: 25px 0 15px;
   color: #5d5d5d;
 }
