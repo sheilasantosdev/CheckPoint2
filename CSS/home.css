@@ -119,13 +119,13 @@ main .banner .text-banner .explorer:hover {
 
 .card-img-top{
   height: 300px;
-  width: 50px;
+  width: 100px;
   border-radius: 12px;
 
 }
 
 .card-title{
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 .card {
@@ -142,10 +142,14 @@ main .banner .text-banner .explorer:hover {
 }
 
 .btn{
+  
   background-color:#00baf2;
   color:#fff;
-  width: 80%;
+  width: 100%;
   border-radius: 100px;
+  margin-top: 20px;
+ 
+  
  
 }
 
