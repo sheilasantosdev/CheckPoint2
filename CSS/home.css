@@ -123,6 +123,14 @@ section.container .card-img-top {
   border-radius: 12px;
 }
 
+.movies{
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin-top: 30px;
+  color: #5d5d5d;
+}
+
 .card-title {
   padding: 10px;
   text-align: center;
