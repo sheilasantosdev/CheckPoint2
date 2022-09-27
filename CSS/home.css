@@ -117,9 +117,10 @@ main .banner .text-banner .explorer:hover {
   background-color: #00baf2;
 }
 
-.card-img-top{
-  height: 300px;
-  width: 100px;
+section.container .card-img-top{
+  transition: all .6s ease-in-out;
+  cursor: pointer;
+  height: 80%;
   border-radius: 12px;
 
 }
@@ -128,9 +129,12 @@ main .banner .text-banner .explorer:hover {
   padding: 10px;
   text-align: center;
 }
-.card {
-  
+section.container .card {
+  cursor: pointer;
   height: 600px;
+  border: none;
+  background: none;
+  position: relative;
   margin-top: 15px;
   
 }
@@ -152,8 +156,14 @@ main .banner .text-banner .explorer:hover {
   
  
 }
-
-.card-body{
+section.container .card:hover .card-body {
+  transition: all .6s ease-in-out;
+  opacity: 1;
+}
+section.container .card .card-body{
+  position: absolute;
+  opacity: 0;
+  bottom: 0px;
   background-color: #F4F4F4;
   border-radius: 12px;
   
