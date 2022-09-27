@@ -1,19 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+
+:root {
+  /*Color text*/
+  --text-terciary: #00baf2;
+  --text-primary: #fff;
+  --text-secondary: #000;
+  /*Color BG*/
+  --bg-secondary: #95989a;
+  --bg-tertiary: #5d5d5d;
 }
-header{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height: 540px;   
-    margin-top: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-header h1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
+header {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Francois One";
+  color: #5d5d5d;
+}
+
+.navbar-brand span {
+  font-size: 2.5rem;
+  margin-left: 2%;
+}
+.navbar .navbar-toggler{
+  color: rgba(255,255,255,.5);
+  background-color: #5d5d5d;
+}
+
+.navbar-nav {
+  margin-left: 60% ;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+main {
+  width: 100vw;
+}
+
+main .banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 549px;
+  background-image: url(../img/banner-fllix.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .banner .text-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 25px;
+  font-family: "Montserrat";
+}
+
+main .banner .text-banner .titulo {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Francois One";
+  
+}
+main .banner .text-banner .titulo h2 {
+  padding: 15px;
+  font-size: 2.4rem;
+}
+
+main .banner .text-banner .explorer {
+  margin-top: 25px;
+  width: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 1px solid #00baf2;
+  outline: none;
+  background: none;
+  padding: 20px;
+  transition: all 0.6s ease-in-out;
+}
+
+main .banner .text-banner .explorer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+main .banner .text-banner .explorer:hover {
+  background-color: #00baf2;
 }
