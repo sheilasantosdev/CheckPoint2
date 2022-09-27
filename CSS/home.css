@@ -145,27 +145,54 @@ section.container .card {
 
 }
 
+
 .btn{
-  
   background-color:#00baf2;
   color:#fff;
   width: 100%;
   border-radius: 100px;
-  margin-top: 20px;
- 
-  
+  margin-top: 45px;
  
 }
+
+
+
 section.container .card:hover .card-body {
   transition: all .6s ease-in-out;
   opacity: 1;
 }
+section.container .card:hover {
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
+
 section.container .card .card-body{
   position: absolute;
   opacity: 0;
+  
   bottom: 0px;
   background-color: #F4F4F4;
   border-radius: 12px;
   
 
+}
+@keyframes swing {
+  15% {
+  transform: translateX(5px);
+  }
+  30% {
+  transform: translateX(-5px);
+  }
+  50% {
+  transform: translateX(3px);
+  }
+  65% {
+  transform: translateX(-3px);
+  }
+  80% {
+  transform: translateX(2px);
+  }
+  100% {
+  transform: translateX(0);
+  }
 }
