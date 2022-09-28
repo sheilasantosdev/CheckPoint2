@@ -63,6 +63,7 @@ nav ul a {
 main {
   width: 100vw;
   margin-left: 120px;
+  height: ;
 }
 
 .banner {
@@ -130,6 +131,10 @@ main {
   margin: 25px 0 15px;
   color: #5d5d5d;
 }
+
+
+
+
 
 
 /*<<<<<< RESPONSIVE MOBILE >>>>*/
