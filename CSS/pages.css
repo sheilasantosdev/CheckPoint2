@@ -18,6 +18,9 @@
 
 header {
   background-color: red;
+  position: fixed;
+  top: 0;
+  z-index: 3;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -63,8 +66,7 @@ main {
 }
 
 .banner {
-  background-image: url(../img/cisne-negro-banner.jpg);
-  height: 480px;
+  height: 550px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,8 +77,32 @@ main {
   margin-bottom: 20px;
 }
 
+#img-banner1{
+  background-image: url(../img/o-pequeno-principe-banner.jpg);
+}
+
+#img-banner2{
+  background-image: url(../img/pulp-fiction-banner.jpg);
+}
+
+#img-banner3{
+  background-image: url(../img/a-procura-da-felicidade-banner.jpg);
+}
+
+#img-banner4{
+  background-image: url(../img/stalker-banner.jpg);
+}
+
+#img-banner5{
+  background-image: url(../img/forrest-gump-banner.jpg);
+}
+
+#img-banner6{
+  background-image: url(../img/cisne-negro-banner.jpg);
+}
+
 .text {
-  width: 1350px;
+  width: 100vw;
   margin-top: 10px;
 }
 
@@ -90,7 +116,7 @@ main {
 }
 
 .credits {
-  width: 600px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
 }
@@ -103,4 +129,55 @@ main {
 .trailer h3 {
   margin: 25px 0 15px;
   color: #5d5d5d;
+}
+
+
+/*<<<<<< RESPONSIVE MOBILE >>>>*/
+@media (max-width: 425px){
+
+  main {
+    margin: 0;
+  }
+
+  .banner {
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .text > h2 {
+    width: 400px;
+    font-weight: bold;
+  }
+  
+  .text > img {
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+  }
+
+  .credits {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  .trailer > h3 {
+    margin-left: 20px;
+  }
+
+  .trailer > iframe {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+
 }

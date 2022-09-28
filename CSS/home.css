@@ -18,7 +18,10 @@
 
 header {
   background-color: red;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,47 +152,123 @@ section.container .card {
   text-align: justify;
 }
 
-<<<<<<< HEAD
-
 .btn{
   background-color:#00baf2;
   color:#fff;
   width: 100%;
   border-radius: 100px;
   margin-top: 45px;
- 
-=======
-.btn {
-  background-color: #00baf2;
-  color: #fff;
-  width: 100%;
-  border-radius: 100px;
-  margin-top: 20px;
->>>>>>> 061229e6378018963ea0f3ff8891c3051bfcf8ee
 }
-
-
 
 section.container .card:hover .card-body {
   transition: all 0.6s ease-in-out;
   opacity: 1;
 }
-<<<<<<< HEAD
+
 section.container .card:hover {
   animation: swing 1s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1s;
 }
 
-section.container .card .card-body{
-=======
 section.container .card .card-body {
->>>>>>> 061229e6378018963ea0f3ff8891c3051bfcf8ee
   position: absolute;
   opacity: 0;
-  
   bottom: 0px;
   background-color: #f4f4f4;
   border-radius: 12px;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  border-top: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal{
+  display: flex;
+  flex-direction: column;
+  
+}
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal input {
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #777;
+}
+.modal .modal-dialog .modal-content .modal-body .container .texto-modal label {
+  margin-top: 15px;
+}
+.modal .modal-dialog .modal-content .modal-body .logo-modal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal .modal-dialog .modal-content .modal-footer .container .botao-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.btn-custom {
+  border-radius: 20px;
+  width: 350px;
+  transition: all .6s ease-in-out;
+} 
+
+.btn-cadastro {
+  width: 250px;
+  height: 50px;
+  background-color: #33BB69;
+  border-radius: 20px;
+  position: relative;
+  color: #fff;
+  
+}
+.btn-cadastro:hover {
+  background: none;
+  color: #fff;
+  
+}
+.btn-cadastro::before {
+  content: '';
+  height: 100%;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  background-color: #333;
+  transition: all .6s ease-in-out;
+}
+.btn-cadastro:hover::before {
+  width: 130px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.btn-cadastro::after {
+  content: '';
+  height: 100%;
+  width: 0;
+  transform: translateX(-100%);
+  position: absolute;
+  bottom: 0;
+  left: 122px;
+  background-color: #333;
+  transition: all .6s ease-in-out;
+}
+.btn-cadastro:hover::after {
+  width: 130px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.btn-cadastro h4 {
+  position: absolute;
+  left: 78px;
+  bottom: -4px;
+  padding: 10px;
+  z-index: 2;
 }
 @keyframes swing {
   15% {
