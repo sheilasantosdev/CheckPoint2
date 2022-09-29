@@ -120,7 +120,7 @@ main {
 }
 
 .text {
-  width: 90vw;
+  width: 100vw;
   margin-top: 10px;
   font-family: "century gothic";
 }
@@ -189,14 +189,14 @@ footer .parag-rodape p {
 }
 
 /*<<<<<< RESPONSIVE MOBILE >>>>*/
-@media (max-width: 425px) {
+@media (max-width: 445px) {
   main {
     margin: 0;
   }
 
   .banner {
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
   }
 
   .text {
@@ -221,6 +221,10 @@ footer .parag-rodape p {
   .credits {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .names{
+    width: 80vw;
   }
 
   .trailer > h3 {
