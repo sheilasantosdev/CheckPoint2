@@ -17,30 +17,42 @@
 }
 
 header {
-  background-color: red;
+  background-color: var(--text-terciary);
   position: fixed;
   top: 0;
-  z-index: 3;
   width: 100%;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar-brand {
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  font-family: "Francois One";
-  color: #5d5d5d;
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: var(--text-cinza);
+  transition: all 0.6s ease-in-out;
 }
 
 .navbar-brand span {
   font-size: 2.5rem;
+  letter-spacing: 1.1px;
   margin-left: 2%;
+  font-family: "century gothic";
 }
+
+span2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
 .navbar .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   background-color: #5d5d5d;
@@ -52,12 +64,18 @@ header {
   display: flex;
   justify-content: space-around;
   font-size: 18px;
-  font-family: "Montserrat";
+  font-family: "century gothic";
 }
 
 nav ul a {
   text-decoration: none;
-  color: #5d5d5d;
+  color: var(--text-cinza);
+  font-weight: 700;
+}
+
+nav ul a:hover {
+  color: #fff;
+  transition: all 0.6s ease-in-out;
 }
 
 main {
@@ -102,12 +120,16 @@ main {
 }
 
 .text {
-  width: 100vw;
+  width: 90vw;
   margin-top: 10px;
+  font-family: "century gothic";
 }
 
 .text h2 {
   height: 40px;
+  font-family: "century gothic";
+  font-weight: 900;
+  color:#353535;
 }
 
 .text img {
@@ -121,9 +143,14 @@ main {
   justify-content: space-between;
 }
 
+.names {
+  margin-top: 20px;
+}
+
 .credits h4 {
   height: 30px;
   color: #5d5d5d;
+  font-family: "century gothic";
 }
 
 .credits span{
@@ -131,8 +158,10 @@ main {
 }
 
 .trailer h3 {
-  margin: 25px 0 15px;
+  margin: 50px 0 15px;
   color: #5d5d5d;
+  font-family: "century gothic";
+  font-weight: 700;
 }
 
 /*Footer*/
@@ -148,13 +177,15 @@ footer .grupo {
   flex-wrap: wrap;
   gap: 10px;
   padding: 30px 10px;
+  font-family: "century gothic";
+  font-size: 13px;
 }
 
 footer .parag-rodape p {
   text-align: center;
   font-size: 1em;
-  font-weight: 800;
   margin-top: 20px;
+  font-family: "century gothic";
 }
 
 /*<<<<<< RESPONSIVE MOBILE >>>>*/
@@ -202,5 +233,5 @@ footer .parag-rodape p {
     margin-bottom: 50px;
     padding: 10px;
   }
-  
+
 }
